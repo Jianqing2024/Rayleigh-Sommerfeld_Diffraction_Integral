@@ -6,7 +6,7 @@ xx=linspace(-fwmhCheckRadius,fwmhCheckRadius,fwmhCheckPoint);
 U=RSradial_GPU(E1,lambda,X1,Y1,xx,Focus_position);
 fwhm = FWHM(xx, U);
 
-Calculation_region=fwhm/2*4;
+Calculation_region=fwhm/2*3;
 Calculation_point=round(Calculation_region/Sampling*2);
 
 if mod(Calculation_point, 2) == 0
