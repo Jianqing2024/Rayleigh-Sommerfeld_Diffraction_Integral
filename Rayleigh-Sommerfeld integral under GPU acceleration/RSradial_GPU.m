@@ -11,6 +11,6 @@ for i=1:numel(x_gpu)
    X=x_gpu(i);
    u(i)=RSintegration(Ein_GPU,lambda_gpu,X0_gpu,Y0_gpu,X,0,z_gpu);
 end
-U = abs(u)^2;
+U = abs(u).^2;
 U = gather(U); 
 end

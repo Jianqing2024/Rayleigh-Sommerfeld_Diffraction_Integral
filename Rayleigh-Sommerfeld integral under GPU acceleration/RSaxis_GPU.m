@@ -10,6 +10,6 @@ for i=1:numel(z)
     Z=z_gpu(i);
     u(i) = RSintegration(Ein_GPU,lambda_gpu,X0_gpu,Y0_gpu,0,0,Z);
 end
-U(i)=abs(u).^2;
+U=abs(u).^2;
 U=gather(U);
 end
