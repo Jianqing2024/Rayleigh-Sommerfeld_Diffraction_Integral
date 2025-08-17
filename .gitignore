@@ -1,0 +1,22 @@
+# 忽略 Python 缓存和虚拟环境
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+env/
+venv/
+
+.ipynb_checkpoints/
+
+*.fsp
+
+*.log
+*.mat
+*.lsf
+*.db
+*.asv
+*.gds
+*.npy
+*.npz
